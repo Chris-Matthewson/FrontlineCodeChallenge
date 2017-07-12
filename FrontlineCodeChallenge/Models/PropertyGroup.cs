@@ -80,6 +80,7 @@ namespace FrontlineCodeChallenge.Models
                         currentPropertyList.Add(newProperty);
 
                         //increment and reset any counters
+                        PropertyCount++;
                         currentDepth++;
                         if (currentDepth > MaxDepth)
                         {
@@ -107,6 +108,7 @@ namespace FrontlineCodeChallenge.Models
                             currentPropertyList.Add(newProperty);
 
                             //reset counters
+                            PropertyCount++;
                             currentPropertyValue = "";
 
                             Debug.WriteLine($"Added prop: {newProperty.Value} with depth {newProperty.Depth}");
@@ -158,6 +160,7 @@ namespace FrontlineCodeChallenge.Models
                     Depth = currentDepth
                 };
                 currentPropertyList.Add(newProperty);
+                PropertyCount++;
 
                 Debug.WriteLine($"Added prop: {newProperty.Value} with depth {newProperty.Depth}");
             }

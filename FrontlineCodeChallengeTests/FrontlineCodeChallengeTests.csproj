@@ -51,6 +51,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AlphabeticalTests.cs" />
+    <Compile Include="DepthTests.cs" />
+    <Compile Include="PropertyCountTest.cs" />
     <Compile Include="NonAlphabeticalTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
